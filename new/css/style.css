@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(255, 245, 255);
+}
+nav{
+    padding: 10px 0;
+}
+a{
+    color: rgb(2, 2, 2);
+}
+
+.li{
+    padding: 15px;
+    position: relative;
+}
+.drop-down{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fdf3f3;
+    width: 100px;
+    transition: .5s ease-in;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+}
+.hover-li{
+    padding: 5px 10px;
+    position: relative;
+}
+
+.drip-down{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgb(155, 144, 155);
+    width: 100px;
+    max-height: 0;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+.drip-down li{
+    padding: 5px 10px;
+}
+.li:hover .drop-down{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hover-li a{
+    display: block;
+}
+
+.hover-li:hover .drip-down{
+    max-height: 20em;
+}
+
+.image-section{
+    background-image: url(../image/1.jpg);
+      height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+}
+
+.image-text{
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2C425D;
+    margin-bottom: 40px;
+    padding-left: 10%;
+    padding-top: 150px;
+}
+
+.shop{
+    border: 5px double #322e86c2;
+    border-style: double;
+    border-block-start-color: darkblue;
+    text-transform: uppercase;
+    background-color: tomato;
+    break-before: avoid-column;
+
+}
